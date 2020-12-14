@@ -11,7 +11,7 @@
 }
 body{
     font-family: "Open Sans", sans-serif;
-    color: white;
+    color: rgba(255,255,255,0.85);
 }
 .supreme-container{
     min-width: 100%;
@@ -24,6 +24,22 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /*border: 1px solid white;*/
+    min-height: 150px;
+    padding-left: max(5vw, 50px);
+    padding-right: max(5vw, 50px);
+}
+.main-nav{
+    /*background-color: rgba(255,255,255,0.1);*/
+    width: 17%;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,0.7);
 }
 .first-sec{
     background-color: var(--intro-bg-color);
@@ -34,6 +50,41 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.first-sec-content{
+    width: 40%;
+    min-width: 700px;
+    text-align: center;
+}
+.big-header{
+    font-family: "Raleway", sans-serif;
+    font-size: 2.4rem;
+}
+.first-sec-header{
+    margin: 20px 0;
+}
+.first-sec-text{
+    min-width: 500px;
+    width: 30%;
+    margin: 30px auto;
+}
+.button{
+    padding: 1rem 5rem;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: none;
+    border-radius: 1.5rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+}
+.button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(176, 68%, 84%), hsl(198, 60%, 70%));
 }
 .second-sec{
     background-color: var(--main-bg-color);
