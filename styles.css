@@ -18,6 +18,7 @@ body{
     min-height: 100vh;
     height: auto;
     position: relative;
+    background-color: var(--main-bg-color);
 }
 .nav-container{
     background-color: var(--intro-bg-color);
@@ -91,33 +92,175 @@ body{
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
+    
+}
+.second-sec-item{
+    background-color: rgba(255,255,255,0.2);
+    width: 50%;
+    margin: 50px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-sec-img{
+    margin-bottom: 8%;
+}
+.second-sec-item-title{
+    margin-bottom: 3%;
+}
+.top-left{
+    justify-self: end;
+}
+.bottom-left{
+    justify-self: end;
 }
 .third-sec{
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: 700px;
+}
+.third-sec-content{
+    width: 40%;
+}
+.third-sec-header{
+    background-color: rgba(255,255,255,0.1);
+    width: 60%;
+    margin-bottom: 30px;
+}
+.third-sec-text{
+    background-color: rgba(255,255,255,0.1);
+    width: 75%;
+    margin-bottom: 20px;
+}
+.third-sec-link{
+    color: hsla(176, 68%, 64%, 0.8);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsla(176, 68%, 64%, 0.8);
+    position: relative;
+}
+.third-sec-link::after{
+    content: url("./images/icon-arrow.svg");
+    position: absolute;
+    top: 3px;
+    right: -20px;
 }
 .testimonials-section
 {
     background-color: var(--main-bg-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: max(50vh, 450px);
+}
+.testimonial{
+    width: 28%;
+    background-color: var(--testimonial-bg-color);
+    padding: 30px;
+    margin: 0 20px;
 }
 .person-container{
     display: flex;
     justify-content: start;
     align-items: center;
 }
+.testimonial-text{
+    margin-bottom: max(3vh, 25px);
+}
+.person-container img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.person-name{
+    font-weight: 700;
+}
 .get-access-card{
-    background-color: var(--intro-bg-color);
+    background-color: var(--intro-bg-color); /*-----------------------------------u stopped here son*/
+    width: max(750px,50%);
+    margin: 0 auto;
+    padding: 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .footer-container{
     background-color: var(--footer-bg-color);
+    padding-left: max(5vw, 50px);
+    padding-right: max(5vw, 50px);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.footer-logo{
+    margin-bottom: max(2vh, 15px);
 }
 .footer-content{
+    margin-top: max(2vh, 15px);
+    width: 100%;
+    align-self: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(255,255,255,0.1);
+}
+.footer-text{
+    width: 25%;
+    position: relative;
+    margin-left: 40px;
+}
+.footer-text::before{
+    content: url("./images/icon-location.svg");
+    position: absolute;
+    left: -40px;
+}
+.contact-details p{
+    margin-bottom: 10px;
+}
+.footer-phone{
+    position: relative;
+}
+.footer-email{
+    position: relative;
+}
+.footer-phone::before{
+    content: url("./images/icon-phone.svg");
+    position:absolute;
+    left: -40px;
+    top: 2px;
+}
+.footer-email::before{
+    content: url("./images/icon-email.svg");
+    position:absolute;
+    left: -40px;
+    top: 2px;
+}
+.footer-menu p{
+    margin-bottom: 10px;
+}
+.social-container{
+    background-color: rgba(255,255,255,0.1);
+    width: max(8vw, 140px);
+    display: flex;
+    justify-content: space-between;
+}
+.social-link{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
 }
 
 .attribution{
