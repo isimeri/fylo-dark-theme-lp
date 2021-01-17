@@ -41,6 +41,12 @@ body{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: rgba(255,255,255,0.7);
+    transition: all 0.2s ease;
+}
+.main-nav a:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .first-sec{
     background-color: var(--intro-bg-color);
@@ -92,11 +98,13 @@ body{
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
-    
+    height: 850px;
+    align-items: center;
 }
 .second-sec-item{
-    background-color: rgba(255,255,255,0.2);
+    /*background-color: rgba(255,255,255,0.2);*/
     width: 50%;
+    min-width: 369px;
     margin: 50px;
     text-align: center;
     height: 100%;
@@ -104,6 +112,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
 }
 .second-sec-img{
     margin-bottom: 8%;
@@ -111,10 +120,7 @@ body{
 .second-sec-item-title{
     margin-bottom: 3%;
 }
-.top-left{
-    justify-self: end;
-}
-.bottom-left{
+.top-left, .bottom-left{
     justify-self: end;
 }
 .third-sec{
@@ -124,8 +130,12 @@ body{
     align-items: center;
     min-height: 700px;
 }
+.third-sec-illustration{
+    max-width: 50%;
+}
 .third-sec-content{
     width: 40%;
+    margin-left: 20px;
 }
 .third-sec-header{
     background-color: rgba(255,255,255,0.1);
@@ -143,6 +153,7 @@ body{
     padding-bottom: 5px;
     border-bottom: 1px solid hsla(176, 68%, 64%, 0.8);
     position: relative;
+    transition: all 0.2s ease-in;
 }
 .third-sec-link::after{
     content: url("./images/icon-arrow.svg");
@@ -150,13 +161,17 @@ body{
     top: 3px;
     right: -20px;
 }
+.third-sec-link:hover{
+    color: white;
+    border-color: white;
+}
 .testimonials-section
 {
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: max(50vh, 450px);
+    min-height: max(30vh, 300px);
 }
 .testimonial{
     width: 28%;
@@ -183,19 +198,39 @@ body{
 .get-access-card{
     background-color: var(--intro-bg-color); /*-----------------------------------u stopped here son*/
     width: max(750px,50%);
-    margin: 0 auto;
-    padding: 50px;
-    position: absolute;
-    transform: translateY(-50%);
+    height: max(20vh,250px);
     left: 0;
-    margin: 0 auto;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+    transform: translateY(50%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.email-input{
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+    width: 65%;
+}
+.error-msg{
+    color: hsl(0, 100%, 63%);
+    font-size: 12px;
+    /*background-color: rgba(255,255,255,0.1);*/
+    text-align: left;
+    padding-left: 4rem;
+    display: none;
+}
+.get-access-button{
+    width: 30%;
+    padding: 1rem 1rem;
 }
 .footer-container{
     background-color: var(--footer-bg-color);
     padding-left: max(5vw, 50px);
     padding-right: max(5vw, 50px);
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -215,7 +250,7 @@ body{
     background-color: rgba(255,255,255,0.1);
 }
 .footer-text{
-    width: 25%;
+    width: 23%;
     position: relative;
     margin-left: 40px;
 }
@@ -261,6 +296,12 @@ body{
     width: 36px;
     height: 36px;
     background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.social-link:hover{
+    color:hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);
+    cursor: pointer;
 }
 
 .attribution{
@@ -276,4 +317,132 @@ body{
 }
 .attribution a:hover{
     color: lightblue;
+}
+
+@media (max-width: 1050px){
+    .nav-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        padding-left: max(3vw, 20px);
+        padding-right: max(3vw, 20px);
+    }
+    .nav-container img{
+        width: 100px;
+    }
+    .main-nav{
+        min-width: 200px;
+    }
+    .main-nav a{
+        font-size: 14px;
+    }
+    .first-sec-illustration{
+        width: 80%;
+    }
+    .first-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .first-sec-content{
+        width: 90%;
+        min-width: 0;
+        text-align: center;
+    }
+    .big-header{
+        font-size: 1.6rem;
+    }
+    .first-sec-text{
+        min-width: 0;
+        width: 100%;
+        margin: 30px auto;
+    }
+    .second-sec{
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 1000px;
+    }
+    .top-left, .bottom-left{
+        justify-self: center;
+    }
+
+    .third-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 700px;
+        margin: 40px 0;
+    }
+    .third-sec-illustration{
+        max-width: 75%;
+    }
+    .third-sec-content{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .third-sec-header{
+        background-color: rgba(255,255,255,0.1);
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .third-sec-text{
+        background-color: rgba(255,255,255,0.1);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials-section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: max(30vh, 300px);
+    }
+    .testimonial{
+        width: 90%;
+        background-color: var(--testimonial-bg-color);
+        padding: 30px;
+        margin: 20px;
+    }
+
+
+    .get-access-card{
+        width: 90%;
+        min-height: 300px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .get-access-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 120px;
+    }
+    .email-input{
+        width: 90%;
+    }
+    .error-msg{
+        color: hsl(0, 100%, 63%);
+        font-size: 12px;
+        /*background-color: rgba(255,255,255,0.1);*/
+        text-align: left;
+        padding-left: 4rem;
+        display: none;
+    }
+    .get-access-button{
+        width: 90%;
+        padding: 1rem 1rem;
+    }
 }

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./styles.css">
   
   <script src="https://kit.fontawesome.com/8f8fd3acc4.js" crossorigin="anonymous"></script>
-
+  <script src="script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -49,7 +49,6 @@
       <div class="second-sec-item top-left">
         <img src="./images/icon-access-anywhere.svg" alt="icon thingy" class="second-sec-img top-left-img">
         <h3 class="second-sec-item-title">Access your files, anywhere</h3>
-
         <p class="second-sec-item-text">
           The ability to use a smartphone, tablet, or computer to access your account means your 
           files follow you everywhere.
@@ -66,7 +65,7 @@
       </div>
       
       <div class="second-sec-item bottom-left">
-        <img src="./images/icon-any-file.svg" alt="icon thingy" class="second-sec-img top-left-img">
+        <img src="./images/icon-collaboration.svg" alt="icon thingy" class="second-sec-img top-left-img">
         <h3 class="second-sec-item-title">Real-time collaboration</h3>
         <p class="second-sec-item-text">
           Securely share files and folders with friends, family and colleagues for live collaboration. 
@@ -75,7 +74,7 @@
       </div>
       
       <div class="second-sec-item bottom-right">
-        <img src="./images/icon-access-anywhere.svg" alt="icon thingy" class="second-sec-img top-left-img">
+        <img src="./images/icon-any-file.svg" alt="icon thingy" class="second-sec-img top-left-img">
         <h3 class="second-sec-item-title">Store any type of file</h3>
         <p class="second-sec-item-text">
           Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
@@ -162,10 +161,11 @@
         questions, our support team would be happy to help you.
       </p>
       <div class="form-container">
-        <form action="#" class="get-access-form">
-          <input type="email" title="Email" placeholder="email@example.com" class="email-input">
-          <button type="submit" class="button">Get Started For Free</button>
+        <form action="#" class="get-access-form" novalidate>
+          <input type="email" title="Email" placeholder="email@example.com" class="email-input" name="email">
+          <button type="submit" name="submitBtn" class="get-access-button button">Get Started For Free</button>
         </form>
+        <p class="error-msg">Please enter a valid email address</p>
       </div>
     </div>
 
