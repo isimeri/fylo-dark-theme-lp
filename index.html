@@ -162,10 +162,12 @@
       </p>
       <div class="form-container">
         <form action="#" class="get-access-form" novalidate>
-          <input type="email" title="Email" placeholder="email@example.com" class="email-input" name="email">
+          <div class="email-and-error">
+            <input type="email" title="Email" placeholder="email@example.com" class="email-input" name="email">
+            <p class="error-msg">Please enter a valid email address</p>
+          </div>
           <button type="submit" name="submitBtn" class="get-access-button button">Get Started For Free</button>
         </form>
-        <p class="error-msg">Please enter a valid email address</p>
       </div>
     </div>
 

@@ -57,7 +57,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -112,7 +112,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 .second-sec-img{
     margin-bottom: 8%;
@@ -138,12 +138,12 @@ body{
     margin-left: 20px;
 }
 .third-sec-header{
-    background-color: rgba(255,255,255,0.1);
+    /*background-color: rgba(255,255,255,0.1);*/
     width: 60%;
     margin-bottom: 30px;
 }
 .third-sec-text{
-    background-color: rgba(255,255,255,0.1);
+    /*background-color: rgba(255,255,255,0.1);*/
     width: 75%;
     margin-bottom: 20px;
 }
@@ -178,6 +178,7 @@ body{
     background-color: var(--testimonial-bg-color);
     padding: 30px;
     margin: 0 20px;
+    border-radius: 10px;
 }
 .person-container{
     display: flex;
@@ -201,7 +202,7 @@ body{
     height: max(20vh,250px);
     left: 0;
     margin: auto;
-    padding: 50px;
+    padding: 30px 50px;
     position: relative;
     transform: translateY(50%);
     text-align: center;
@@ -209,10 +210,23 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
 }
+.get-access-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 90px;
+}
+.email-and-error{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
 .email-input{
     padding: 1rem 2rem;
     border-radius: 1.6rem;
-    width: 65%;
+    width: 100%;
 }
 .error-msg{
     color: hsl(0, 100%, 63%);
@@ -224,7 +238,7 @@ body{
 }
 .get-access-button{
     width: 30%;
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 .footer-container{
     background-color: var(--footer-bg-color);
@@ -235,7 +249,6 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    
 }
 .footer-logo{
     margin-bottom: max(2vh, 15px);
@@ -247,7 +260,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rgba(255,255,255,0.1);
+    /*background-color: rgba(255,255,255,0.1);*/
 }
 .footer-text{
     width: 23%;
@@ -284,7 +297,7 @@ body{
     margin-bottom: 10px;
 }
 .social-container{
-    background-color: rgba(255,255,255,0.1);
+    /*background-color: rgba(255,255,255,0.1);*/
     width: max(8vw, 140px);
     display: flex;
     justify-content: space-between;
@@ -304,7 +317,7 @@ body{
     cursor: pointer;
 }
 
-.attribution{
+footer{
     position: absolute;
     bottom: 1vh;
     left: 50%;
@@ -344,7 +357,6 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid white;
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -390,12 +402,10 @@ body{
         margin-left: 0;
     }
     .third-sec-header{
-        background-color: rgba(255,255,255,0.1);
         width: 100%;
         margin-bottom: 30px;
     }
     .third-sec-text{
-        background-color: rgba(255,255,255,0.1);
         width: 100%;
         margin-bottom: 20px;
     }
@@ -430,19 +440,71 @@ body{
         width: 100%;
         min-height: 120px;
     }
+    .email-and-error{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .email-input{
-        width: 90%;
+        margin: 0 auto;
+        width: 80%;
     }
     .error-msg{
         color: hsl(0, 100%, 63%);
         font-size: 12px;
         /*background-color: rgba(255,255,255,0.1);*/
         text-align: left;
-        padding-left: 4rem;
+        padding-left: 12vw;
         display: none;
     }
     .get-access-button{
         width: 90%;
+        max-width: 220px;
         padding: 1rem 1rem;
+    }
+
+    .footer-container{
+        padding-left: max(5vw, 30px);
+        padding-right: max(5vw, 30px);
+        padding-top: 150px;
+        padding-bottom: 60px;
+        min-height: 800px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: max(2vh, 15px);
+    }
+    .footer-content{
+        margin-top: max(2vh, 15px);
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-text{
+        width: 80%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .footer-text, .footer-phone, .footer-email{
+        margin-left: 40px;
+    }
+    .contact-details p{
+        margin-bottom: 30px;
+    }
+    .footer-menu{
+        margin-top: 30px;
+    }
+    .social-container{
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
