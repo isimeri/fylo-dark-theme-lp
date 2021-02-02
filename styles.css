@@ -384,7 +384,6 @@ footer{
     .top-left, .bottom-left{
         justify-self: center;
     }
-
     .third-sec{
         display: flex;
         flex-direction: column;
@@ -410,8 +409,7 @@ footer{
         margin-bottom: 20px;
     }
 
-    .testimonials-section
-    {
+    .testimonials-section{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -420,12 +418,9 @@ footer{
     }
     .testimonial{
         width: 90%;
-        background-color: var(--testimonial-bg-color);
         padding: 30px;
         margin: 20px;
     }
-
-
     .get-access-card{
         width: 90%;
         min-height: 300px;
@@ -450,9 +445,7 @@ footer{
         width: 80%;
     }
     .error-msg{
-        color: hsl(0, 100%, 63%);
         font-size: 12px;
-        /*background-color: rgba(255,255,255,0.1);*/
         text-align: left;
         padding-left: 12vw;
         display: none;
