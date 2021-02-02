@@ -168,9 +168,12 @@ body{
 .testimonials-section
 {
     background-color: var(--main-bg-color);
+    background: url("/images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: 5% 5%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: max(30vh, 300px);
 }
 .testimonial{
@@ -179,6 +182,7 @@ body{
     padding: 30px;
     margin: 0 20px;
     border-radius: 10px;
+    box-shadow: -15px -10px 10px rgba(0,0,0,0.1);
 }
 .person-container{
     display: flex;
@@ -413,11 +417,12 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-position: 5% 0%;
         align-items: center;
         min-height: max(30vh, 300px);
     }
     .testimonial{
-        width: 90%;
+        width: 84%;
         padding: 30px;
         margin: 20px;
     }
